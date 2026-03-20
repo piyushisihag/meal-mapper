@@ -9,7 +9,7 @@ app = Flask(__name__)
 # ─────────────────────────────────────────
 def load_recipes():
     # Make sure recipes.json is in the same folder as app.py
-   with open("recipes.json", "r") as f:
+    with open("recipes.json", "r") as f:
         return json.load(f)
 
 
@@ -69,7 +69,11 @@ def suggest():
     if not data or "ingredients" not in data:
         return jsonify({"error": "Please send ingredients in the request body."}), 400
 
-    ingredients = data["ingredients"]  # expects a list e.g. ["egg","milk"]
+    ingredients = data["ingredients"]
+
+    # Handle string input: "egg, milk, flour" → ["egg", "milk", "flour"]
+    if isinstance(ingredients, str):
+        ingredients = [i.strip() for i in ingredients.split(",")]
 
     if not isinstance(ingredients, list) or len(ingredients) == 0:
         return jsonify({"error": "ingredients must be a non-empty list."}), 400
