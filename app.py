@@ -9,7 +9,7 @@ app = Flask(__name__)
 # ─────────────────────────────────────────
 def load_recipes():
     # Make sure recipes.json is in the same folder as app.py
-    with open("recipes.json", "r") as f:
+    with open("recipes.json, "r") as f:
         return json.load(f)
 
 
