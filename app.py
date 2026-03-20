@@ -9,7 +9,7 @@ app = Flask(__name__)
 # ─────────────────────────────────────────
 def load_recipes():
     # Make sure recipes.json is in the same folder as app.py
-    with open("recipes.json, "r") as f:
+   with open("recipes.json", "r") as f:
         return json.load(f)
 
 
@@ -116,4 +116,4 @@ def steps():
 #  Run the app
 # ─────────────────────────────────────────
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
