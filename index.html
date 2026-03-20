@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Savora — Taste the Craft</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Savora</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta">Get Started</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">FOOD</div>
+    <div class="hero-content">
+      <span class="hero-tag">College Micro Project</span>
+      <h1 class="hero-title">Make Every Meal <br/><em>Unforgettable.</em></h1>
+      <p class="hero-sub">Discover the science & art behind flavours that linger. Elevate your cooking with techniques, pairings, and recipes crafted with intention.</p>
+      <div class="hero-actions">
+        <a href="#recipes" class="btn-primary">Explore Recipes</a>
+        <a href="#about" class="btn-ghost">Learn More ↓</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="plate-ring ring-3"></div>
+      <div class="plate-ring ring-2"></div>
+      <div class="plate-ring ring-1"></div>
+      <div class="plate-center">🍽️</div>
+    </div>
+    <div class="scroll-hint">scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-label">— About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Food is more than fuel.<br/><em>It's an experience.</em></h2>
+        <p>Savora is a college micro project dedicated to exploring what makes food truly delicious — from ingredient science to plating aesthetics. We believe anyone can cook extraordinary meals with the right knowledge.</p>
+        <p>Our goal: bring culinary wisdom to everyday kitchens through clean, actionable insights.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Recipes</span></div>
+          <div class="stat"><span class="stat-num">12</span><span class="stat-label">Techniques</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Flavour Profiles</span></div>
+        </div>
+      </div>
+      <div class="about-card-stack">
+        <div class="about-card card-back">
+          <span class="card-emoji">🧄</span>
+          <p>Aromatics build the flavour base</p>
+        </div>
+        <div class="about-card card-front">
+          <span class="card-emoji">🫙</span>
+          <p>Fermentation adds depth & umami</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-label">— What We Offer</div>
+    <h2 class="section-title">The Secret to <em>Delicious</em></h2>
+    <div class="features-grid">
+      <div class="feature-card" data-delay="0">
+        <div class="feature-icon">🔥</div>
+        <h3>Heat Mastery</h3>
+        <p>Understand Maillard reactions, caramelisation, and how temperature transforms raw ingredients into complex, layered flavours.</p>
+      </div>
+      <div class="feature-card" data-delay="100">
+        <div class="feature-icon">🧂</div>
+        <h3>Seasoning Science</h3>
+        <p>Salt doesn't just add saltiness — it suppresses bitterness and amplifies sweetness. Learn to season like a chef, not a cook.</p>
+      </div>
+      <div class="feature-card" data-delay="200">
+        <div class="feature-icon">🫒</div>
+        <h3>Fat & Flavour</h3>
+        <p>Fat carries aroma molecules and creates mouthfeel. Discover which fats to use, when to add them, and why it matters.</p>
+      </div>
+      <div class="feature-card" data-delay="300">
+        <div class="feature-icon">🍋</div>
+        <h3>Acid Balance</h3>
+        <p>A squeeze of lemon at the end brightens everything. Learn how acidity cuts richness and lifts flat-tasting dishes instantly.</p>
+      </div>
+      <div class="feature-card" data-delay="400">
+        <div class="feature-icon">🌿</div>
+        <h3>Herb Timing</h3>
+        <p>Robust herbs go in early; delicate ones go in last. Get the timing right and unlock layers of freshness in every bite.</p>
+      </div>
+      <div class="feature-card" data-delay="500">
+        <div class="feature-icon">🎨</div>
+        <h3>Plating & Colour</h3>
+        <p>We eat with our eyes first. Colour contrast, height, and negative space on a plate make food taste better before the first bite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPE CARDS -->
+  <section class="recipes" id="recipes">
+    <div class="section-label">— Quick Recipes</div>
+    <h2 class="section-title">Start Cooking <em>Tonight</em></h2>
+    <div class="recipes-grid">
+      <div class="recipe-card">
+        <div class="recipe-emoji">🍝</div>
+        <div class="recipe-info">
+          <span class="recipe-tag">Italian</span>
+          <h3>Aglio e Olio</h3>
+          <p>Garlic, olive oil, chilli, pasta water — four things that make magic in 15 minutes.</p>
+          <div class="recipe-meta">
+            <span>⏱ 15 min</span>
+            <span>👤 2 servings</span>
+            <span>⭐ Easy</span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-card featured">
+        <div class="recipe-emoji">🍛</div>
+        <div class="recipe-info">
+          <span class="recipe-tag">Indian</span>
+          <h3>Dal Tadka</h3>
+          <p>Lentils bloomed with tempered spices — a simple comfort dish with extraordinary depth.</p>
+          <div class="recipe-meta">
+            <span>⏱ 30 min</span>
+            <span>👤 4 servings</span>
+            <span>⭐ Easy</span>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-card">
+        <div class="recipe-emoji">🥗</div>
+        <div class="recipe-info">
+          <span class="recipe-tag">Fresh</span>
+          <h3>Mango Chaat</h3>
+          <p>Sweet, sour, spicy, crunchy — a perfect balance of all five flavour sensations at once.</p>
+          <div class="recipe-meta">
+            <span>⏱ 10 min</span>
+            <span>👤 2 servings</span>
+            <span>⭐ Easy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Savora</div>
+        <p>A college micro project exploring the art and science of delicious food.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Made with ❤️ for college</p>
+        <p>Pune, Maharashtra</p>
+        <div class="footer-socials">
+          <span>📧</span>
+          <span>📸</span>
+          <span>🐦</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Savora — College Micro Project. Built with HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

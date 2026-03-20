@@ -1,0 +1,61 @@
+
+[
+  {
+    "name": "Omelette",
+    "ingredients": ["egg", "butter", "salt", "pepper"],
+    "steps": [
+      "Crack 2 eggs into a bowl and beat them well.",
+      "Add a pinch of salt and pepper.",
+      "Heat butter in a pan on medium flame.",
+      "Pour the egg mixture into the pan.",
+      "Let it set for 1–2 minutes, then fold in half.",
+      "Serve hot and enjoy!"
+    ]
+  },
+  {
+    "name": "Pancakes",
+    "ingredients": ["flour", "egg", "milk", "butter", "sugar", "baking powder"],
+    "steps": [
+      "Mix 1 cup flour, 1 tbsp sugar, and 1 tsp baking powder in a bowl.",
+      "Add 1 egg and 1 cup milk. Mix until smooth.",
+      "Heat a buttered pan on medium flame.",
+      "Pour a ladle of batter and cook until bubbles form on top.",
+      "Flip and cook the other side for 1 minute.",
+      "Serve with honey or jam!"
+    ]
+  },
+  {
+    "name": "Tomato Rice",
+    "ingredients": ["rice", "tomato", "onion", "garlic", "oil", "salt", "cumin"],
+    "steps": [
+      "Cook rice separately and keep it aside.",
+      "Heat oil in a pan. Add cumin seeds.",
+      "Add chopped onion and garlic. Fry until golden.",
+      "Add chopped tomatoes and cook until soft.",
+      "Mix in the cooked rice. Add salt to taste.",
+      "Stir well and serve hot!"
+    ]
+  },
+  {
+    "name": "Banana Milkshake",
+    "ingredients": ["banana", "milk", "sugar"],
+    "steps": [
+      "Peel and slice 1 ripe banana.",
+      "Put banana, 1 cup milk, and 1 tsp sugar in a blender.",
+      "Blend for 30 seconds until smooth.",
+      "Pour into a glass and serve chilled!"
+    ]
+  },
+  {
+    "name": "Vegetable Fried Rice",
+    "ingredients": ["rice", "carrot", "peas", "egg", "soy sauce", "oil", "garlic", "onion"],
+    "steps": [
+      "Cook rice and let it cool completely.",
+      "Heat oil in a pan. Add garlic and onion, fry for 1 minute.",
+      "Add chopped carrot and peas. Stir fry for 3 minutes.",
+      "Push veggies to the side and scramble the egg in the pan.",
+      "Add rice and soy sauce. Mix everything well.",
+      "Stir fry for 2 more minutes and serve!"
+    ]
+  }
+]
