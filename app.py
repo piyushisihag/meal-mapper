@@ -8,7 +8,7 @@ app = Flask(__name__)
 # ─────────────────────────────────────────
 #  Configure Gemini
 # ─────────────────────────────────────────
-genai.configure(api_key="AIzaSyDj9SRugEU0dnUrDGK05UY08DZRU-_iUMA")
+genai.configure(api_key="AIzaSyCPDa58JrpAHvnX7TvSlyo3wKEtktEFHfQ")
 
 # ─────────────────────────────────────────
 #  Load recipes from JSON file
