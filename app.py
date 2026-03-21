@@ -58,7 +58,7 @@ def find_recipes(user_ingredients):
         missing = [i for i in recipe_ingredients if i not in user_ingredients]
         match_percent = int((len(have) / len(recipe_ingredients)) * 100)
 
-        if match_percent >= 50:
+        if match_percent >= 20:
             key = recipe["name"].lower()
             matched.append({
                 "name": recipe["name"],
