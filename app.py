@@ -115,7 +115,33 @@ def steps():
 
     return jsonify({"error": f"Recipe '{data['recipe_name']}' not found."}), 404
 
+@app.route("/add_recipe", methods=["POST"])
+def add_recipe():
+    data = request.get_json()
 
+    if not data or "name" not in data or "ingredients" not in data or "steps" not in data:
+        return jsonify({"error": "Please send name, ingredients and steps."}), 400
+
+    new_recipe = {
+        "name": data["name"].strip(),
+        "ingredients": [i.strip().lower() for i in data["ingredients"]],
+        "steps": data["steps"]
+    }
+
+    # Load existing recipes
+    recipes = load_recipes()
+
+    # Check for duplicate
+    for r in recipes:
+        if r["name"].lower() == new_recipe["name"].lower():
+            return jsonify({"error": "Recipe already exists!"}), 409
+
+    # Add and save
+    recipes.append(new_recipe)
+    with open("recipes.json", "w") as f:
+        json.dump(recipes, f, indent=2)
+
+    return jsonify({"message": f"Recipe '{new_recipe['name']}' added successfully!"}), 201
 # ─────────────────────────────────────────
 #  Run the app
 # ─────────────────────────────────────────

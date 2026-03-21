@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Savora — Taste the Craft</title>
+  <title>Meal Mapper — Find Recipes Instantly</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
@@ -11,13 +11,13 @@
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="nav-logo">Savora</div>
+    <div class="nav-logo">🗺️ Meal Mapper</div>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#recipes">Recipes</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <li><a href="#add-recipe">Add Recipe</a></li>
     </ul>
     <button class="nav-cta">Get Started</button>
     <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
@@ -27,9 +27,8 @@
   <section class="hero" id="hero">
     <div class="hero-bg-text">FOOD</div>
     <div class="hero-content">
-      <span class="hero-tag">College Micro Project</span>
-      <h1 class="hero-title">Make Every Meal <br/><em>Unforgettable.</em></h1>
-      <p class="hero-sub">Discover the science & art behind flavours that linger. Elevate your cooking with techniques, pairings, and recipes crafted with intention.</p>
+      <h1 class="hero-title">Staring at your fridge <br/><em>with no idea?</em></h1>
+      <p class="hero-sub">Don't know what to cook? Not sure how to cook it? Type your ingredients and we'll instantly map out every meal you can make — step by step. We've got you covered. 🍽️</p>
       <div class="hero-actions">
         <a href="#recipes" class="btn-primary">Explore Recipes</a>
         <a href="#about" class="btn-ghost">Learn More ↓</a>
@@ -39,7 +38,7 @@
       <div class="plate-ring ring-3"></div>
       <div class="plate-ring ring-2"></div>
       <div class="plate-ring ring-1"></div>
-      <div class="plate-center">🍽️</div>
+      <div class="plate-center">🗺️</div>
     </div>
     <div class="scroll-hint">scroll</div>
   </section>
@@ -50,22 +49,22 @@
     <div class="about-grid">
       <div class="about-text">
         <h2>Food is more than fuel.<br/><em>It's an experience.</em></h2>
-        <p>Savora is a college micro project dedicated to exploring what makes food truly delicious — from ingredient science to plating aesthetics. We believe anyone can cook extraordinary meals with the right knowledge.</p>
-        <p>Our goal: bring culinary wisdom to everyday kitchens through clean, actionable insights.</p>
+        <p>Meal Mapper was built for exactly that moment — it's 7pm, your stomach is growling, and you're staring at random ingredients with no idea what to cook.</p>
+        <p>We're a simple, smart recipe finder that takes the stress out of cooking. Tell us what's in your kitchen and we'll instantly map out every meal you can make, complete with step by step instructions. No fancy ingredients. No culinary skills required. Zero waste.</p>
         <div class="about-stats">
-          <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Recipes</span></div>
-          <div class="stat"><span class="stat-num">12</span><span class="stat-label">Techniques</span></div>
-          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Flavour Profiles</span></div>
+          <div class="stat"><span class="stat-num">300</span><span class="stat-label">Recipes</span></div>
+          <div class="stat"><span class="stat-num">50</span><span class="stat-label">Ingredients</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Cuisines</span></div>
         </div>
       </div>
       <div class="about-card-stack">
         <div class="about-card card-back">
           <span class="card-emoji">🧄</span>
-          <p>Aromatics build the flavour base</p>
+          <p>Type your ingredients and find instant recipe matches</p>
         </div>
         <div class="about-card card-front">
-          <span class="card-emoji">🫙</span>
-          <p>Fermentation adds depth & umami</p>
+          <span class="card-emoji">🗺️</span>
+          <p>We map the best recipes from what you already have</p>
         </div>
       </div>
     </div>
@@ -74,37 +73,37 @@
   <!-- FEATURES -->
   <section class="features" id="features">
     <div class="section-label">— What We Offer</div>
-    <h2 class="section-title">The Secret to <em>Delicious</em></h2>
+    <h2 class="section-title">Why <em>Meal Mapper?</em></h2>
     <div class="features-grid">
       <div class="feature-card" data-delay="0">
-        <div class="feature-icon">🔥</div>
-        <h3>Heat Mastery</h3>
-        <p>Understand Maillard reactions, caramelisation, and how temperature transforms raw ingredients into complex, layered flavours.</p>
+        <div class="feature-icon">🔍</div>
+        <h3>Ingredient Search</h3>
+        <p>Type whatever you have at home — from pantry staples to fresh produce — and instantly find matching recipes.</p>
       </div>
       <div class="feature-card" data-delay="100">
-        <div class="feature-icon">🧂</div>
-        <h3>Seasoning Science</h3>
-        <p>Salt doesn't just add saltiness — it suppresses bitterness and amplifies sweetness. Learn to season like a chef, not a cook.</p>
+        <div class="feature-icon">🍛</div>
+        <h3>Indian & Global Recipes</h3>
+        <p>From dal tadka to pasta, vada pav to burgers — our database covers everyday Gen Z favourites.</p>
       </div>
       <div class="feature-card" data-delay="200">
-        <div class="feature-icon">🫒</div>
-        <h3>Fat & Flavour</h3>
-        <p>Fat carries aroma molecules and creates mouthfeel. Discover which fats to use, when to add them, and why it matters.</p>
+        <div class="feature-icon">📋</div>
+        <h3>Step by Step Guide</h3>
+        <p>Every recipe comes with clear, simple cooking instructions so even beginners can cook like a pro.</p>
       </div>
       <div class="feature-card" data-delay="300">
-        <div class="feature-icon">🍋</div>
-        <h3>Acid Balance</h3>
-        <p>A squeeze of lemon at the end brightens everything. Learn how acidity cuts richness and lifts flat-tasting dishes instantly.</p>
+        <div class="feature-icon">♻️</div>
+        <h3>Zero Food Waste</h3>
+        <p>Use up leftover ingredients before they go bad. Meal Mapper helps you cook smart and waste nothing.</p>
       </div>
       <div class="feature-card" data-delay="400">
-        <div class="feature-icon">🌿</div>
-        <h3>Herb Timing</h3>
-        <p>Robust herbs go in early; delicate ones go in last. Get the timing right and unlock layers of freshness in every bite.</p>
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Results</h3>
+        <p>No waiting, no loading screens. Get recipe suggestions the moment you type your ingredients.</p>
       </div>
       <div class="feature-card" data-delay="500">
-        <div class="feature-icon">🎨</div>
-        <h3>Plating & Colour</h3>
-        <p>We eat with our eyes first. Colour contrast, height, and negative space on a plate make food taste better before the first bite.</p>
+        <div class="feature-icon">🤖</div>
+        <h3>Smart Matching</h3>
+        <p>Our algorithm finds both full and partial matches — so even if you're missing one ingredient, we still suggest recipes.</p>
       </div>
     </div>
   </section>
@@ -118,8 +117,8 @@
         <div class="recipe-emoji">🍝</div>
         <div class="recipe-info">
           <span class="recipe-tag">Italian</span>
-          <h3>Aglio e Olio</h3>
-          <p>Garlic, olive oil, chilli, pasta water — four things that make magic in 15 minutes.</p>
+          <h3>Garlic Pasta</h3>
+          <p>Pasta, garlic, olive oil, chilli — four things that make magic in just 15 minutes.</p>
           <div class="recipe-meta">
             <span>⏱ 15 min</span>
             <span>👤 2 servings</span>
@@ -141,13 +140,13 @@
         </div>
       </div>
       <div class="recipe-card">
-        <div class="recipe-emoji">🥗</div>
+        <div class="recipe-emoji">🍔</div>
         <div class="recipe-info">
-          <span class="recipe-tag">Fresh</span>
-          <h3>Mango Chaat</h3>
-          <p>Sweet, sour, spicy, crunchy — a perfect balance of all five flavour sensations at once.</p>
+          <span class="recipe-tag">Snack</span>
+          <h3>Veg Burger</h3>
+          <p>Crispy patty, fresh veggies, melted cheese — the ultimate quick snack fix.</p>
           <div class="recipe-meta">
-            <span>⏱ 10 min</span>
+            <span>⏱ 20 min</span>
             <span>👤 2 servings</span>
             <span>⭐ Easy</span>
           </div>
@@ -155,13 +154,41 @@
       </div>
     </div>
   </section>
+  <!-- ADD RECIPE -->
+<section class="add-recipe" id="add-recipe">
+  <div class="section-label">— Contribute</div>
+  <h2 class="section-title">Add Your <em>Recipe</em></h2>
+  <div class="add-recipe-form">
+
+    <div class="form-group">
+      <label>Recipe Name</label>
+      <input type="text" id="recipeName" placeholder="e.g. Masala Maggi"/>
+    </div>
+
+    <div class="form-group">
+      <label>Ingredients <span>(one per line)</span></label>
+      <textarea id="recipeIngredients" rows="5" 
+        placeholder="egg&#10;onion&#10;tomato&#10;salt"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Steps <span>(one per line)</span></label>
+      <textarea id="recipeSteps" rows="6" 
+        placeholder="Boil water.&#10;Add noodles.&#10;Add masala.&#10;Serve hot."></textarea>
+    </div>
+
+    <button class="btn-submit" id="submitRecipe">Add Recipe 🍽️</button>
+    <div class="form-message" id="formMessage"></div>
+
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer class="footer" id="contact">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="footer-logo">Savora</div>
-        <p>A college micro project exploring the art and science of delicious food.</p>
+        <div class="footer-logo">🗺️ Meal Mapper</div>
+        <p>A smart recipe finder built as a college micro project. Type your ingredients, discover your next meal.</p>
       </div>
       <div class="footer-links">
         <h4>Sections</h4>
@@ -170,6 +197,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#add-recipe">Add Recipe</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -184,7 +212,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Savora — College Micro Project. Built with HTML, CSS & JS.</p>
+      <p>© 2026 Meal Mapper — College Micro Project. Built with HTML, CSS & JS.</p>
     </div>
   </footer>
 
